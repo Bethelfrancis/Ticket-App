@@ -249,6 +249,10 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
 }
 
+.hamburger {
+  display: none
+}
+
 /* responsive tweaks */
 @media (max-width: 768px) {
   .hero {
@@ -274,12 +278,14 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    z-index: 5;
   }
   .hamburger-box {
     display: inline-block;
     width: 24px;
     height: 16px;
     position: relative;
+    z-index: 5;
   }
   .hamburger-inner,
   .hamburger-inner::before,
@@ -331,7 +337,7 @@ body {
     padding-top: 96px;
     gap: 18px;
     transition: right 0.28s cubic-bezier(0.2, 0.8, 0.2, 1);
-    z-index: 999;
+    z-index: 3;
   }
   .nav.mobile-open {
     right: 0;
